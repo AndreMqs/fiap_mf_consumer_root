@@ -1,12 +1,16 @@
-import './App.css';
-import Home from 'home/HomePage';
+import React from 'react';
 
-const App = () => {
+import Home from 'home/Home';
+import Main from 'main/Main';
+
+function App() {
   return (
-    <div className="content">
+    <>
+      HOST APPLICATION
       <Home />
-    </div>
-  );
-};
+      <Main />
+    </>
+  )
+}
 
-export default App;
+export default App
