@@ -15,5 +15,5 @@ import './Presente.svg';
 import './SaldoBackground.svg';
 import './Saque.svg';
 import './TransactionBackground.svg';
-import './Whatsapp.svg';
+import './WhatsApp.svg';
 import './Youtube.svg';
