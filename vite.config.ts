@@ -10,9 +10,15 @@ export default defineConfig({
     svgr(),
     federation({
       name: 'fiap_mf_root',
+      // Use para build local
+      // remotes: {
+      //   home: 'http://localhost:3001/assets/remoteEntry.js',
+      //   main: 'http://localhost:3002/assets/remoteEntry.js',
+      // },
+      // Use para build no ec2
       remotes: {
-        home: 'http://localhost:3001/assets/remoteEntry.js',
-        main: 'http://localhost:3002/assets/remoteEntry.js',
+        home: '/home/assets/remoteEntry.js',
+        main: '/main/assets/remoteEntry.js'
       },
       shared: [
         'react', 
