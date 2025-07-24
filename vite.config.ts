@@ -20,7 +20,7 @@ export default defineConfig({
       remotes: {
         home: `http://${elastic_ip}/home/assets/remoteEntry.js`,
         main: `http://${elastic_ip}/main/assets/remoteEntry.js`,
-      }
+      },
       // remotes: {
       //  home: 'http://18.188.40.201:3001/assets/remoteEntry.js',
       //  main: 'http://18.188.40.201:3002/assets/remoteEntry.js',
