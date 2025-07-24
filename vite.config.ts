@@ -17,8 +17,8 @@ export default defineConfig({
       // },
       // Use para build no ec2
       remotes: {
-        home: '/home/assets/remoteEntry.js',
-        main: '/main/assets/remoteEntry.js'
+        home: 'http://home/assets/remoteEntry.js',
+        main: 'http://main/assets/remoteEntry.js',
       },
       shared: [
         'react', 
