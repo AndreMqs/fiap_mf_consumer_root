@@ -17,9 +17,13 @@ export default defineConfig({
       // },
       // Use para build no ec2
       remotes: {
-        home: 'http://18.188.40.201:3001/assets/remoteEntry.js',
-        main: 'http://18.188.40.201:3002/assets/remoteEntry.js',
+        home: 'http://localhost/home/assets/remoteEntry.js',
+        main: 'http://localhost/main/assets/remoteEntry.js',
       },
+      // remotes: {
+      //  home: 'http://18.188.40.201:3001/assets/remoteEntry.js',
+      //  main: 'http://18.188.40.201:3002/assets/remoteEntry.js',
+      // },
       shared: [
         'react', 
         'react-dom', 
