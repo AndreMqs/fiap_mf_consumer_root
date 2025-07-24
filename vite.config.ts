@@ -4,6 +4,7 @@ import federation from '@originjs/vite-plugin-federation';
 import svgr from 'vite-plugin-svgr';
 
 // https://vite.dev/config/
+const elastic_ip = '18.188.40.201';
 export default defineConfig({
   plugins: [
     react(),
@@ -17,9 +18,9 @@ export default defineConfig({
       // },
       // Use para build no ec2
       remotes: {
-        home: 'http://localhost/home/assets/remoteEntry.js',
-        main: 'http://localhost/main/assets/remoteEntry.js',
-      },
+        home: `http://${elastic_ip}/home/assets/remoteEntry.js`,
+        main: `http://${elastic_ip}/main/assets/remoteEntry.js`,
+      }
       // remotes: {
       //  home: 'http://18.188.40.201:3001/assets/remoteEntry.js',
       //  main: 'http://18.188.40.201:3002/assets/remoteEntry.js',
